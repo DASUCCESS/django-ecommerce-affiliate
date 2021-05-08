@@ -1,0 +1,39 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="row">
+	<div class="col-md-6">
+		<div class="card card-body">
+
+			<form action="" method="POST">
+				{% csrf_token %}
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <span class="input-group-text">Product Ordered:</span>
+                    </div>
+                    {{form.product_ordered}}
+                </div>
+                <div class="input-group mb-2">
+                    <div class="input-group-append">
+                        <span class="input-group-text">Date Ordered:</span>
+                    </div>
+                    {{form.date_ordered}}
+                </div>
+                <div class="input-group mb-2">
+                    <div class="input-group-append">
+                        <span class="input-group-text"> Your address:</span>
+                    </div>
+                    {{form.address}}
+                </div>
+				
+				<input type="submit" name="Submit">
+			</form>
+
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,233 @@
+{% extends 'main.html' %}
+{% load static %}
+
+
+
+
+{% block content %}
+  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>
+    Dashboard
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="white" data-active-color="danger">
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="active ">
+            <a href="./dashboard.html">
+              <i class="nc-icon nc-bank"></i>
+              <h1>Dashboard</h1>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+  
+      
+        <div class="content">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">
+                    <div class="icon-big text-center icon-warning">
+                      <i class="nc-icon nc-globe text-warning"></i>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-8">
+                    <div class="numbers">
+                      <h4 class="card-category">Overall Orders</h4>
+                      <p class="card-title">{{total_orders}}<p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer ">
+                <hr>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">
+                    <div class="icon-big text-center icon-warning">
+                      <i class="nc-icon nc-money-coins text-success"></i>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-8">
+                    <div class="numbers">
+                      <h4 class="card-category">Delivered</h4>
+                      <p class="card-title">{{delivered}}<p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer ">
+                <hr>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">
+                    <div class="icon-big text-center icon-warning">
+                      <i class="nc-icon nc-vector text-danger"></i>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-8">
+                    <div class="numbers">
+                      <h4 class="card-category">Pending</h4>
+                      <p class="card-title">{{pending}}<p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer ">
+                <hr>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">
+                    <div class="icon-big text-center icon-warning">
+                      <i class="nc-icon nc-favourite-28 text-primary"></i>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-8">
+                    <div class="numbers">
+                      <h4 class="card-category">Account Owner</h4>
+                      <p class="card-title">{{request.user}}<p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer ">
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- PRODUCT ORDERED SECTION -->
+<div class="card-header">
+  <h4 class="card-title"> My Orders</h4>
+</div>
+<div class="card-body">
+  <div class="table-responsive">
+    <table class="table">
+      <tr class=" text-primary">
+        <th>
+          Product Name
+        </th>
+        <th>
+          Price
+        </th>
+        <th>
+          Status
+        </th>
+        <th>
+          Category
+        </th>
+        <th>
+          Action
+        </th>
+      </tr>
+    {% for o in orders %}
+      <tr>
+            <td>
+              {{o.product_ordered}}
+            </td>
+            <td>
+              ${{o.product_ordered.price}}
+            </td>
+            <td>
+              {{o.order_status}}
+            </td>
+            <td>
+              <a class="btn btn-warning" href="{% url 'updateorder' o.id %}">Update your Order</a>
+            </td>
+            <td>
+              <a class="btn btn-danger" href="{% url 'deleteorder' o.id %}">Delete your Order</a>
+            </td>
+      </tr>
+    {% endfor %}
+        </tr>
+    </table>
+  </div>
+</div>
+
+<!-- END OF PRODUCT ORDERED SECTION -->
+        <div class="content">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="card-title"> Products Available</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <tr class=" text-primary">
+                          <th>
+                            Product Name
+                          </th>
+                          <th>
+                            Price
+                          </th>
+                          <th>
+                            Category
+                          </th>
+                          <th>
+                            Action
+                          </th>
+                        </tr>
+                      {% for p in products %}
+                        <tr>
+                              <td>
+                                {{p.name_of_product}}
+                              </td>
+                              <td>
+                                ${{p.price}}
+                              </td>
+                              <td>
+                                {{p.categories}}
+                              </td>
+                              <td>
+                                <a href="{% url 'createorder' %}">Create Order</a>
+                              </td>
+                        </tr>
+                      {% endfor %}
+                          </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+</body>
+
+</html>
+{% endblock content %}
+  

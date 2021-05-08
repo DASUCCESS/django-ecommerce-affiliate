@@ -1,0 +1,69 @@
+{% extends 'main.html' %}
+{% load static %}
+
+
+
+
+{% block content %}
+   <!-- Page Content -->
+   <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Services
+        <small>DS-AFFILIATE</small>
+    </h1>
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'home' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Services</li>
+    </ol>
+
+    <!-- Image Header -->
+    <img class="img-fluid rounded mb-4" src="{% static 'myaffiliate/images/dsaffiliate.jpg' %}" alt="">
+
+    <!-- Marketing Icons Section -->
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+                <h4 class="card-header">Big Product</h4>
+                <div class="card-body">
+                    <p class="card-text">We bring to you all the available products we have with us, dont miss out and start shopping, explore our website and get the best deals from us.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="{% url 'about' %}" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+                <h4 class="card-header">Sell With Us</h4>
+                <div class="card-body">
+                    <p class="card-text">Do you know that you can start selling with us and make the best use of our channel to promote your product and other services, you can be our agent today.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Be Our Agent</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+                <h4 class="card-header">Buy From Us</h4>
+                <div class="card-body">
+                    <p class="card-text">All our products did not come from amazon alone, we distribute ds-affiliate product to our customers that buy any of our product from us directly.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Start Buying</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+{% endblock content %}
+  

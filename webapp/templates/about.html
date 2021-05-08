@@ -1,0 +1,131 @@
+{% extends 'main.html' %}
+{% load static %}
+
+
+
+
+{% block content %}
+   <!-- Page Content -->
+   <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">About
+        <small> DS-AFFILIATE</small>
+    </h1>
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="{% url 'home' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item active">About</li>
+    </ol>
+
+    <!-- Intro Content -->
+    <div class="row">
+        <div class="col-lg-6">
+            <img class="img-fluid rounded mb-4" src="{% static 'myaffiliate/images/ds.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-6">
+            <h2>About DS-AFFILIATE</h2>
+            <p>DS-AFFILIATE is an affiliate websites that is used to sell products online including amazon products, featured products and so on.</p>
+            <p>We provide excellent services to all our customers and subscribers on their various orders and deliveries, we are trustworthy to deal with any product available online. </p>
+            <p>DS-AFFILIATE is originated from Nigeria created by a young developer with python django for a very fast experience of services, we hereby call all our trusted custormers to order any product of there choices from different type of products
+                available with us .</p>
+        </div>
+    </div>
+    <!-- <div class="row col-lg-9  mb-4">
+        <table>
+            <tr>
+                <th>Head 1</th>
+                <th>Head 2</th>
+                <th>Head 3</th>
+            </tr>
+            <tr>
+                <td>Product 1</td>
+                <td>Product 2</td>
+                <td>Product 3</td>
+            </tr>
+            <tr>
+                <td>Product 4</td>
+                <td>Product 5</td>
+                <td>Product 6</td>
+            </tr>
+        </table>
+        </table>
+    </div> -->
+    <!-- /.row -->
+
+    <!-- Team Members -->
+    <h2>Our Team</h2>
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100 text-center">
+                <!-- <img class="card-img-top" src="{% static 'myaffiliate/images/dsofficial.png' %}" alt=""> -->
+                <div class="card-body">
+                    <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="muhammed-luqman-bolaji"><a class="LI-simple-link" href='https://ng.linkedin.com/in/muhammed-luqman-bolaji?trk=profile-badge'>Muhammed Luqman Bolaji</a></div>
+                    <p class="card-text">Founder DST TECHNOLOGY <br> (Owner DS-AFFILIATE)</p>
+                </div>
+                <div class="card-footer">
+                    <a href="https://www.linkedin.com/in/muhammed-luqman-bolaji/">Connect with me on linkedin</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100 text-center">
+                <img class="card-img-top" src="{% static 'myaffiliate/images/luis.png' %}" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Adesiyan Devine (Nabith)</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">Position</h6>
+                    <p class="card-text">Executive Director <br> (DST TECHNOLOGY)</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#">Full Stack Developer</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100 text-center">
+                <img class="card-img-top" src="{% static 'myaffiliate/images/amos.png' %}" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Opegbemi Amos</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">Position</h6>
+                    <p class="card-text">Partner at R.I.I.T <br> (REVOLUTION INNOVATION TECH)</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#">Cyber Expert</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Our Customers -->
+    <h2>Our Best Sales</h2>
+    <div class="row">
+        <div class="col-lg-2 col-sm-4 mb-4">
+            <img class="img-fluid" src="{% static 'myaffiliate/images/top.png' %}" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+            <img class="img-fluid" src="{% static 'myaffiliate/images/top2.png' %}" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+            <img class="img-fluid" src="{% static 'myaffiliate/images/top3.png' %}" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+            <img class="img-fluid" src="{% static 'myaffiliate/images/top4.png' %}" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+            <img class="img-fluid" src="{% static 'myaffiliate/images/top5.png' %}" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+            <img class="img-fluid" src="{% static 'myaffiliate/images/top6.png' %}" alt="">
+        </div>
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+{% endblock content %}
+  
+

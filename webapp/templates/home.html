@@ -1,0 +1,287 @@
+{% extends 'main.html' %}
+{% load static %}
+
+
+
+{% block content %}
+<header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-image: url({% static 'myaffiliate/images/dsimg.jpg' %})">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Welcome to DS-AFFILIATE</h3>
+                    <p>This is an Amazon Affiliate website where you can get your amazon products</p>
+                </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url({% static 'myaffiliate/images/dsimg5.jpg' %})">
+                <!-- <div style="color:black" class="carousel-caption d-none d-md-block">
+                    <h3>We sell Big Product</h3>
+                    <p>You can register your product with us to sell.</p>
+                </div> -->
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('{% static 'myaffiliate/images/dsimg4.jpg' %}')">
+                <div style="color:black" class="carousel-caption d-none d-md-block">
+                    <h3>Good and Fast Supply</h3>
+                    <p>We provide fast and good delivery domestically on all products ordered in our company</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</header>
+
+<!-- Page Content -->
+<div class="container">
+
+    <h1 class="my-4">Welcome to DASUCCESS affiliate</h1>
+
+    <!-- Marketing Icons Section -->
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+                <h4 class="card-header">Big Product</h4>
+                <div class="card-body">
+                    <p class="card-text">We bring to you all the available products we have with us, dont miss out and start shopping, explore our website and get the best deals from us.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="{% url 'about' %}" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+                <h4 class="card-header">Sell With Us</h4>
+                <div class="card-body">
+                    <p class="card-text">Do you know that you can start selling with us and make the best use of our channel to promote your product and other services, you can be our agent today.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Be Our Agent</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+                <h4 class="card-header">Buy From Us</h4>
+                <div class="card-body">
+                    <p class="card-text">All our products did not come from amazon alone, we distribute ds-affiliate product to our customers that buy any of our product from us directly.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Start Buying</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+    <div class="col-md-8">
+        <marquee style="padding: 7px; background-color: red; color:white; width: 100%;" behavior="" direction=""> <a style="color: white;" target="_blank" href="https://www.amazon.com/promocode/A1832C99Z8ALGN?ref_=assoc_tag_ph_1524210774301&_encoding=UTF8&camp=1789&creative=9325&linkCode=pr4&tag=dsaffiliate-20&linkId=059317ced93920d06a63df9db83f1d15">Click this link and Save 50% on select product(s) with promo code 50LB6OA9 on Amazon.com</a><img
+                src="//ir-na.amazon-adsystem.com/e/ir?t=dsaffiliate-20&l=pr4&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> </marquee>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <!-- Portfolio Section -->
+    <h2>TOP SALES</h2>
+
+    <div class="row">
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="{% static 'myaffiliate/images/hp g51.png' %}" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="#">HP 250 G5 LAPTOP INTEL  CORE i3</a>
+                    </h4>
+                    <p class="card-text">Model - HP 250 G5 LAPTOP INTEL CORE i3 Processor <br> – UP TO 2.16GHz Memory <br> - 4GB Hard disk <br> - 500GB Graphics Card <br> - INTEL HD Screen <br>- 15.6 HD BV LED-backlight Display SuperMulti 8X DVD-RW</p>
+                    <div class="col-md">
+                        <a class="btn btn-lg btn-secondary btn-block" href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="{% static 'myaffiliate/images/dell.jpg' %}" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="#">Dell Inspiron 15 Intel Celeron (4GB RAM 500 HDD) </a>
+                    </h4>
+                    <p class="card-text"> - Display Size: 15.6 Inches <br>Model - Dell Inspiron 15 Intel Celeron <br> - Processor:Intel Celeron <br> - RAM: 4GB <br> - HDD: 500HDD <br> - Operating System: Windows 10 <br> - Colour: Black</p>
+                    <div class="col-md">
+                        <a class="btn btn-lg btn-secondary btn-block" href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="{% static 'myaffiliate/images/dell.jpg' %}" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="#">HP 250 G5 LAPTOP INTEL  CORE i5</a>
+                    </h4>
+                    <p class="card-text">Model - HP 250 G5 LAPTOP INTEL CORE i3 Processor <br> – UP TO 2.16GHz Memory <br> - 4GB Hard disk <br> - 500GB Graphics Card <br> - INTEL HD Screen <br>- 15.6 HD BV LED-backlight Display SuperMulti 8X DVD-RW</p>
+                    <div class="col-md">
+                        <a class="btn btn-lg btn-secondary btn-block" href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="{% static 'myaffiliate/images/hoodie.png' %}" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="#">CUSTOMIZED HOODIE</a>
+                    </h4>
+                    <p class="card-text">Hoodie of top notch quality from good material available at good price.</p>
+                    <div class="col-md">
+                        <a class="btn btn-lg btn-secondary btn-block" href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="{% static 'myaffiliate/images/hoodie2.png' %}" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="#">HOODIE</a>
+                    </h4>
+                    <p class="card-text">Customized Hoodie of top notch quality from good material.</p>
+                    <div class="col-md">
+                        <a class="btn btn-lg btn-secondary btn-block" href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+            <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="{% static 'myaffiliate/images/roundneck.png' %}" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="#">ROUND-NECK</a>
+                    </h4>
+                    <p class="card-text">Quality Unisex Roundneck for both male and female.( Top Quality)</p>
+                    <div class="col-md">
+                        <a class="btn btn-lg btn-secondary btn-block" href="#">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+    <br>
+    <hr>
+    <br>
+    <!-- Features Section -->
+    <div class="row">
+        <div class="col-lg-6">
+            <script type="text/javascript">
+                amzn_assoc_placement = "adunit0";
+                amzn_assoc_tracking_id = "dsaffiliate-20";
+                amzn_assoc_ad_mode = "search";
+                amzn_assoc_ad_type = "smart";
+                amzn_assoc_marketplace = "amazon";
+                amzn_assoc_region = "US";
+                amzn_assoc_default_search_phrase = "gift cards";
+                amzn_assoc_default_category = "All";
+                amzn_assoc_linkid = "8dce5c316831480134af32423dd53861";
+                amzn_assoc_title = "Shop Related Products";
+                amzn_assoc_search_bar = "true";
+                amzn_assoc_search_bar_position = "top";
+            </script>
+            <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+        </div>
+        <div class="col-lg-6">
+            <script type="text/javascript">
+                amzn_assoc_placement = "adunit0";
+                amzn_assoc_tracking_id = "dsaffiliate-20";
+                amzn_assoc_ad_mode = "search";
+                amzn_assoc_ad_type = "smart";
+                amzn_assoc_marketplace = "amazon";
+                amzn_assoc_region = "US";
+                amzn_assoc_default_search_phrase = "android phones";
+                amzn_assoc_default_category = "All";
+                amzn_assoc_linkid = "8dce5c316831480134af32423dd53861";
+                amzn_assoc_title = "Shop Related Products";
+                amzn_assoc_search_bar = "true";
+                amzn_assoc_search_bar_position = "top";
+            </script>
+            <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+        </div>
+    </div>
+    <!-- FEATURE TWO -->
+    <br>
+    <hr>
+    <br>
+    <div class="row">
+        <div class="col-lg-6">
+            <script type="text/javascript">
+                amzn_assoc_placement = "adunit0";
+                amzn_assoc_tracking_id = "dsaffiliate-20";
+                amzn_assoc_ad_mode = "search";
+                amzn_assoc_ad_type = "smart";
+                amzn_assoc_marketplace = "amazon";
+                amzn_assoc_region = "US";
+                amzn_assoc_default_search_phrase = " headphones";
+                amzn_assoc_default_category = "All";
+                amzn_assoc_linkid = "8dce5c316831480134af32423dd53861";
+                amzn_assoc_title = "Shop Related Products";
+                amzn_assoc_search_bar = "true";
+                amzn_assoc_search_bar_position = "top";
+            </script>
+            <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+        </div>
+        <div class="col-lg-6">
+            <script type="text/javascript">
+                amzn_assoc_placement = "adunit0";
+                amzn_assoc_tracking_id = "dsaffiliate-20";
+                amzn_assoc_ad_mode = "search";
+                amzn_assoc_ad_type = "smart";
+                amzn_assoc_marketplace = "amazon";
+                amzn_assoc_region = "US";
+                amzn_assoc_default_search_phrase = "Shoes";
+                amzn_assoc_default_category = "All";
+                amzn_assoc_linkid = "8dce5c316831480134af32423dd53861";
+                amzn_assoc_title = "Shop Related Products";
+                amzn_assoc_search_bar = "true";
+                amzn_assoc_search_bar_position = "top";
+            </script>
+            <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+    <!-- Call to Action Section -->
+    <div class="row mb-4">
+        <div class="col-md-8">
+            <marquee style="padding: 7px; background-color: red; color:white;" behavior="" direction=""> <a style="color: white;" target="_blank" href="https://www.amazon.com/promocode/A1832C99Z8ALGN?ref_=assoc_tag_ph_1524210774301&_encoding=UTF8&camp=1789&creative=9325&linkCode=pr4&tag=dsaffiliate-20&linkId=059317ced93920d06a63df9db83f1d15">Click this link and Save 50% on select product(s) with promo code 50LB6OA9 on Amazon.com</a><img
+                    src="//ir-na.amazon-adsystem.com/e/ir?t=dsaffiliate-20&l=pr4&o=1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> </marquee>
+        </div>
+        <div class="col-md-4">
+            <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
+        </div>
+    </div>
+
+</div>
+<!-- /.container -->
+
+
+{% endblock content %}
